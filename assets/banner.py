@@ -16,7 +16,7 @@ class Text:
 
     def color_text(self, text):
         for color in self.COLORS:
-            text = text.replace("[[" + color + "]]", self.COLORS[color])
+            text = text.replace(f"[[{color}]]", self.COLORS[color])
         return text
 
     def colors(self):
